@@ -117,11 +117,6 @@ DMOJ_EMAIL_CHANGE_LIMIT_COUNT = 10
 # Number of minutes before an email change request activation key expires
 DMOJ_EMAIL_CHANGE_EXPIRY_MINUTES = 60
 
-# At the bare minimum, dark and light theme CSS file locations must be declared
-DMOJ_THEME_CSS = {
-    'light': 'style.css',
-    'dark': 'dark/style.css',
-}
 # At the bare minimum, dark and light ace themes must be declared
 DMOJ_THEME_DEFAULT_ACE_THEME = {
     'light': 'github',
@@ -348,7 +343,6 @@ TEMPLATES = [
                 'judge.template_context.general_info',
                 'judge.template_context.site',
                 'judge.template_context.site_name',
-                'judge.template_context.site_theme',
                 'judge.template_context.misc_config',
                 'judge.template_context.math_setting',
                 'social_django.context_processors.backends',
