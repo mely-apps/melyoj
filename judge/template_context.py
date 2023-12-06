@@ -79,6 +79,7 @@ def site_name(request):
             'SITE_LONG_NAME': settings.SITE_LONG_NAME,
             'SITE_ADMIN_EMAIL': settings.SITE_ADMIN_EMAIL}
 
+
 def math_setting(request):
     caniuse = CanIUse(request.META.get('HTTP_USER_AGENT', ''))
 
