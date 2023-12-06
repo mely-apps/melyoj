@@ -275,10 +275,6 @@ nav {
 @media not all and (max-width: 760px) {
     #nav-list {
         li {
-            &.home-menu-item {
-                display: none;
-            }
-
             &:not(:hover) > ul {
                 display: none !important;
             }
