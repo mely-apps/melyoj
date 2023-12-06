@@ -16,6 +16,4 @@ fi
 
 cd "$(dirname "$0")" || exit
 
-sass resources:sass_processed
-postcss sass_processed/style.css sass_processed/martor-description.css sass_processed/select2-dmoj.css --verbose --use autoprefixer -d resources
-
+sass sass/style.scss:resources/style.css sass/martor-description.scss:resources/martor-description.css sass/select2-dmoj.scss:resources/select2-dmoj.css

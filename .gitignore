@@ -7,9 +7,7 @@
 *~
 *.swp
 dmoj/local_settings.py
-resources/martor-description.css
-resources/select2-dmoj.css
-resources/style.css
-resources/vars.scss
-sass_processed
+resources/martor-description.*
+resources/select2-dmoj.*
+resources/style.css*
 jsi18n
