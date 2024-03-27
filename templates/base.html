@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
+{% load static tailwind_tags %}
 <head>
     <title>{% block title %}{{ title }} - {{ SITE_LONG_NAME }}{% endblock %}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -27,6 +28,7 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#FFBB33">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    {% tailwind_css %}
     {# Chrome 39 for Android colour #}
     <meta name="theme-color" content="#FFBB33">
     {% if og_image %}
