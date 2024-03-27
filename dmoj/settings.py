@@ -163,7 +163,9 @@ DMOJ_CANONICAL = ''
 
 # Application definition
 
-INSTALLED_APPS = ()
+INSTALLED_APPS = (
+
+)
 
 try:
     import wpadmin

@@ -1,0 +1,119 @@
+/* This if  inside django admin */
+.submit-row a {
+  box-sizing: content-box;
+}
+body.overflow {
+  overflow: hidden!important;
+}
+
+/* Scroll Bar */
+.section-martor ::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+.section-martor ::-webkit-scrollbar {
+  height: 6px;
+	width: 6px;
+	background-color: #F5F5F5;
+}
+.section-martor ::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+.ace_scrollbar-v {
+  cursor: ns-resize;
+}
+
+.main-martor {}
+.martor-toolbar {
+  padding: 0 .85714286em!important;
+  padding-bottom: 4px!important;
+}
+.martor-toolbar .ui.icon .markdown-image-upload {
+  position: relative;
+  overflow: hidden;
+}
+.martor-toolbar .ui.icon .markdown-image-upload input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 25px;
+  padding: 0;
+  padding-left: 35px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  cursor: inherit;
+  display: block;
+}
+.emoji-loader-init {
+  min-height: 200px!important;
+}
+.insert-emoji {cursor: pointer}
+
+/* Full Screen Mode */
+.main-martor-fullscreen {
+  background: #fff;
+  position: fixed;
+  z-index: 999;
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+.main-martor-fullscreen .fields.martor-toolbar {
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+}
+.main-martor-fullscreen .section-martor {
+  height: 90%;
+  position: relative;
+}
+/* EOF */
+
+.marked-emoji {max-width: 20px}
+
+.section-martor {
+
+}
+
+.section-martor div[data-tab="editor-tab-description"] {
+  padding: 0 !important;
+}
+
+.martor {
+  height: 500px;
+  max-height: 500px;
+}
+.martor-field {
+  width: 100%;
+  height: 250px;
+  min-height: 100px;
+}
+
+form .martor-preview-stale {
+  background: repeating-linear-gradient(-45deg, #fff, #fff 10px, #f8f8f8 10px, #f8f8f8 20px) !important;
+}
+
+.icon.expand-editor {
+  position: absolute;
+  bottom: .8em;
+  right: 0;
+}
+.no-border {
+  border: none!important;
+}
+/* live preview */
+form .enable-living .martor-preview {
+  display: block !important;
+}
+form .enable-living .tab-martor-menu a.item {
+  display: none !important;
+}
