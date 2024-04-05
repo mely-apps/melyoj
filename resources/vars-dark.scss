@@ -1,4 +1,7 @@
 @import "vars-common";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 $is_light_theme: false;
 
