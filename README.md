@@ -26,6 +26,7 @@ Rebuild the css after making change to the `templates` folder with these command
 python3 manage.py collectstatic
 ```
 If you can't see the change, you may have to wipe your cache (Ctrl-F5 (or Cmd-Shift-R on Mac)).
+
 The build might take longer than usual, due to Tailwind ;)
 
 ## Features
