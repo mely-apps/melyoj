@@ -18,3 +18,5 @@ jsi18n
 
 bin
 lib
+node_modules
+share
