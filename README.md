@@ -19,6 +19,15 @@ A modern open-source online judge and contest platform system. It has been used 
 
 See it live at [dmoj.ca](https://dmoj.ca/)!
 
+## Tailwind note
+Rebuild the css after making change to the `templates` folder with these command:
+```
+./make_style.sh
+python3 manage.py collectstatic
+```
+If you can't see the change, you may have to wipe your cache (Ctrl-F5 (or Cmd-Shift-R on Mac)).
+The build might take longer than usual, due to Tailwind ;)
+
 ## Features
 
 * [Support for over **60 language runtimes**](https://github.com/DMOJ/online-judge#supported-languages)
