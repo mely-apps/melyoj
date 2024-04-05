@@ -14,3 +14,7 @@ resources/style.css
 resources/vars.scss
 sass_processed
 jsi18n
+
+
+bin
+lib
