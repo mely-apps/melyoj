@@ -20,3 +20,8 @@ bin
 lib
 node_modules
 share
+
+package-lock.json
+theme
+
+uwsgi.ini
