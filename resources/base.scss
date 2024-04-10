@@ -21,6 +21,12 @@
     max-width: device-width;
 }
 
+* {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
 a {
     color: $color_link75;
 
