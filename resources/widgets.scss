@@ -112,7 +112,7 @@ input {
 
         &:checked {
             appearance: auto;
-            accent-color: $highlight_blue;
+            accent-color: $mely_yellow;
         }
     }
 }
@@ -190,7 +190,7 @@ textarea:focus {
 
         &.active {
             a, span {
-                border-top-color: $highlight_blue !important;
+                border-top-color: $mely_yellow !important;
             }
 
             .tab-icon {
@@ -298,7 +298,7 @@ ul.pagination {
             a, span {
                 z-index: 2;
                 color: #FFF;
-                background-color: $highlight_blue;
+                background-color: $mely_yellow;
                 border-color: transparent;
                 cursor: default;
             }

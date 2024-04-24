@@ -122,7 +122,7 @@ nav {
 
                 &.active {
                     color: #FFF;
-                    background: $highlight_blue;
+                    background: $mely_yellow;
                 }
 
                 .nav-expand {
@@ -156,7 +156,7 @@ nav {
                         font-size: 0.8em;
                         line-height: 18px;
                         display: block;
-                        border-left: 4px solid $sidebar_yellow;
+                        border-left: 4px solid $mely_yellow;
                         white-space: nowrap;
                     }
                 }
@@ -217,7 +217,7 @@ nav {
 
         &.hover {
             color: #4db7fe;
-            text-shadow: 0 0 5px $highlight_blue;
+            text-shadow: 0 0 5px $mely_yellow;
             transition-duration: 0.25s;
         }
     }
@@ -282,6 +282,13 @@ nav {
             &:not(:hover) > ul {
                 display: none !important;
             }
+
+            /*
+            &:hover > ul {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            */
 
             ul {
                 left: 0 !important;
