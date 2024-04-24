@@ -119,12 +119,12 @@ DMOJ_EMAIL_CHANGE_EXPIRY_MINUTES = 60
 
 # At the bare minimum, dark and light theme CSS file locations must be declared
 DMOJ_THEME_CSS = {
-    'light': 'style.css',
+    'light': 'dark/style.css',
     'dark': 'dark/style.css',
 }
 # At the bare minimum, dark and light ace themes must be declared
 DMOJ_THEME_DEFAULT_ACE_THEME = {
-    'light': 'github',
+    'light': 'twilight',
     'dark': 'twilight',
 }
 DMOJ_SELECT2_THEME = 'dmoj'
