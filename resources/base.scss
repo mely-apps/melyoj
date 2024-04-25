@@ -122,9 +122,10 @@ body {
     font-size: $base_font_size;
     line-height: 1.231;
     background: $color_primary5;
-    font-family: "Segoe UI", "Lucida Grande", Arial, sans-serif, "Inter";
+    font-family: "Inter", "Segoe UI", "Lucida Grande", Arial, sans-serif;
     color: $color_primary100;
     height: 100%;
+    // TODO: Add bg image
     //background-image: url("https://s3-alpha-sig.figma.com/img/eca1/da0f/ed989f2f76caaaef9d774fe7e36d29fb?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mvzITV8iqJkUHwmR3paOV~k6XZTb20Gl6oycrp9QIdJrNq18JaPd7QfyYXIIttfgnJysu8CZ56s~i09Qxc~cXR0QbqTrQth~VRUKmoepDjKCHRMk5zudmzndyFsGBL--u2XHLZ3BBBU7~6JRkwKZbxcbZEdYO9ilLUruR~21LUI75T0R6gbJm8kTf5NYGU4017sbhpuy2Y7TMr~CyRkCzTh3IMZGp~BCm3ITauCAU2ouaM6RTJ-~emMnkud2lKGH26Rjx2LP-qhykNcIPq-hoYAn9jz90Y2tKg8xkhzRMuvtRL-X23W~NPr2Ig9rj66EGd6p7ZPveuj73tH31lVt-w__");
 }
 
