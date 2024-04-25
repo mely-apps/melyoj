@@ -1,0 +1,27 @@
+INFO 2024-04-25 07:16:13,885 daemon Exiting due to SIGINT
+INFO 2024-04-25 07:31:47,634 judge_handler Judge connected from: ('127.0.0.1', 41528)
+INFO 2024-04-25 07:31:47,643 judge_handler Judge authenticated: ('127.0.0.1', 41528) (Judge01)
+INFO 2024-04-25 07:32:38,671 judge_list Specified judge Judge01 is available
+INFO 2024-04-25 07:32:38,672 judge_list Dispatched submission 1 to: Judge01
+INFO 2024-04-25 07:32:38,701 judge_handler Submission acknowledged: 1
+INFO 2024-04-25 07:32:41,258 judge_handler Judge01: Submission generated compiler messages: 1
+INFO 2024-04-25 07:32:41,263 judge_handler Judge01: Grading has begun on: 1
+INFO 2024-04-25 07:32:41,298 judge_handler Judge01: 1 test case(s) completed on: 1
+INFO 2024-04-25 07:32:41,302 judge_handler Judge01: Grading has ended on: 1
+INFO 2024-04-25 07:32:41,302 judge_list Judge available after grading 1: Judge01
+INFO 2024-04-25 11:43:44,982 judge_list Free judges: 1
+INFO 2024-04-25 11:43:44,985 judge_list Dispatched submission 2 to: Judge01
+INFO 2024-04-25 11:43:45,005 judge_handler Submission acknowledged: 2
+INFO 2024-04-25 11:43:49,581 judge_handler Judge01: Submission generated compiler messages: 2
+INFO 2024-04-25 11:43:49,585 judge_handler Judge01: Grading has begun on: 2
+INFO 2024-04-25 11:43:49,621 judge_handler Judge01: 1 test case(s) completed on: 2
+INFO 2024-04-25 11:43:49,627 judge_handler Judge01: Grading has ended on: 2
+INFO 2024-04-25 11:43:49,628 judge_list Judge available after grading 2: Judge01
+INFO 2024-04-25 11:44:00,298 judge_list Free judges: 1
+INFO 2024-04-25 11:44:00,298 judge_list Dispatched submission 3 to: Judge01
+INFO 2024-04-25 11:44:00,311 judge_handler Submission acknowledged: 3
+INFO 2024-04-25 11:44:04,759 judge_handler Judge01: Submission generated compiler messages: 3
+INFO 2024-04-25 11:44:04,763 judge_handler Judge01: Grading has begun on: 3
+INFO 2024-04-25 11:44:04,795 judge_handler Judge01: 1 test case(s) completed on: 3
+INFO 2024-04-25 11:44:04,799 judge_handler Judge01: Grading has ended on: 3
+INFO 2024-04-25 11:44:04,799 judge_list Judge available after grading 3: Judge01

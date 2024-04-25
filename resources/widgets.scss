@@ -31,25 +31,28 @@
     white-space: nowrap;
     font-weight: 400;
     line-height: 1.4;
+    /*
     background: rgb(51, 122, 183) none repeat scroll 0 (0% / auto) padding-box border-box;
     background: -webkit-linear-gradient(top, #337ab7 0, #265a88 100%) repeat-x;
     background: linear-gradient(to bottom, #337ab7 0, #265a88 100%) repeat-x;
+    */
+
     border-radius: $widget_border_radius;
     padding: 6px 12px;
     display: block;
-    border: 1px solid #245580;
+    border: 1px solid #FAA41D;
     text-align: center;
 
     // 4k hack
     font-size: $base_font_size;
 
     &:hover {
-        background: #265a88;
+        background: #faa41d;
     }
 
     &:active {
         border-color: #245580;
-        background: #265a88;
+        background: #faa41d;
     }
 
     &.full {

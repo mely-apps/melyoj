@@ -22,7 +22,6 @@
 }
 
 * {
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
 }
@@ -122,7 +121,7 @@ body {
     font-size: $base_font_size;
     line-height: 1.231;
     background: $color_primary5;
-    font-family: "Inter", "Segoe UI", "Lucida Grande", Arial, sans-serif;
+    font-family: "Inter", "Lucida Grande", Arial, sans-serif;
     color: $color_primary100;
     height: 100%;
     // TODO: Add bg image
