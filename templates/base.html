@@ -10,23 +10,7 @@
         <meta name="description" content="{{ meta_description }}">
     {% endif %}
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicons-->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#FFBB33">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <link rel="icon" href="https://codemely.dev/images/logo.svg" sizes="any">
     {# Chrome 39 for Android colour #}
     <meta name="theme-color" content="#FFBB33">
     {% if og_image %}
@@ -192,20 +176,19 @@
             <li class="home-nav-element"><span class="nav-divider"></span></li>
             <li class="home-menu-item"><a href="{{ url('home') }}" class="nav-home">{{ _('Home') }}</a></li>
             {% for node in mptt_tree(nav_bar) recursive %}
-                <li>
-                    <a href="{{ node.path }}" class="nav-{{ node.key }}{% if node.key in nav_tab %} active{% endif %}">
-                        {{ user_trans(node.label) }}
-                        {% if not node.is_leaf_node() %}
-                            <div class="nav-expand">&gt;</div>
-                        {% endif %}
-                    </a>
-                    {% with children=node.get_children() %}
-                        {% if children %}<ul>{{ loop(children) }}</ul>{% endif %}
-                    {% endwith %}
-                </li>
+            <li>
+                <a href="{{ node.path }}" class="nav-{{ node.key }}{% if node.key in nav_tab %} active{% endif %}">
+                    {{ user_trans(node.label) }}
+                    {% if not node.is_leaf_node() %}
+                        <div class="nav-expand">&gt;</div>
+                    {% endif %}
+                </a>
+                {% with children=node.get_children() %}
+                    {% if children %}<ul>{{ loop(children) }}</ul>{% endif %}
+                {% endwith %}
+            </li>
             {% endfor %}
         </ul>
-
         <span id="user-links">
             {% if request.user.is_authenticated %}
                 <ul>
@@ -238,7 +221,9 @@
                 <span class="anon">
                     <a href="{{ url('auth_login') }}?next={{ LOGIN_RETURN_PATH|urlencode }}"><b>{{ _('Log in') }}</b></a>
                     &nbsp;{{ _('or') }}&nbsp;
-                    <a href="{{ url('registration_register') }}"><b>{{ _('Sign up') }}</b></a>
+                    <a class="" href="{{ url('registration_register') }}">  
+                        <b class="border border-[#FAA41D] border-solid hover:bg-[#FAA41D] hover:text-[#FFFFFF] px-4 py-1.5 text-sm leading-5 rounded-md font-semibold text-yellow-300 hover:underline"">{{ _('Sign up') }}</b>
+                    </a>
                 </span>
             {% endif %}
         </span>
