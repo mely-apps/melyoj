@@ -49,6 +49,7 @@ Cài đặt dependencies
 ```bash
 $ pip3 install -r requirements.txt
 $ pip3 install lxml_html_clean
+$ npm install tailwindcss
 ```
 
 Cấu hình MelyOJ
