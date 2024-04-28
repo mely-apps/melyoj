@@ -124,3 +124,12 @@ svg.rate-box {
         vertical-align: middle;
     }
 }
+
+.admin a, .admin {
+    color: #FFC0CB !important;
+    font-weight: bold !important;
+}
+
+.admin:before{
+    content: "🌸 ";
+}
