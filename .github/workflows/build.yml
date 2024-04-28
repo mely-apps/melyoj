@@ -38,9 +38,6 @@ jobs:
       run: sudo systemctl start mysql.service
     - name: Run unit tests
       run: coverage run --source=. manage.py test judge
-    - name: Generate coverage report
-      run: coverage xml
-    - uses: codecov/codecov-action@v1
   styles:
     runs-on: ubuntu-latest
     steps:
@@ -50,6 +47,8 @@ jobs:
         with:
           node-version: '22'
       - name: Install npm packages
-        run: npm install -g sass postcss-cli postcss autoprefixer tailwindcss
+        run: npm install -g sass postcss-cli postcss autoprefixer
+      - name: Install TailwindCSS
+        run: npm install tailwindcss
       - name: Build style.css
         run: ./make_style.sh
