@@ -16,7 +16,7 @@ jobs:
     - name: Lint with flake8
       run: |
         flake8 --version
-        flake8 --ignore=F811,FI10,FI11,FI12,FI13,FI14,FI15,FI16,FI17,FI18
+        flake8 --ignore=F811,FI10,FI11,FI12,FI13,FI14,FI15,FI16,FI17,FI18,W504
   unit:
     runs-on: ubuntu-latest
     steps:
