@@ -1,7 +1,7 @@
 <h1 align="center">
-  <img src="https://avatars2.githubusercontent.com/u/6934864?v=3&s=1000" width="120px">
+  <img src="https://i.ibb.co/ncssRM5/437465171-412800521470932-8888283350696784784-n.jpg" width="120px">
   <br>
-  DMOJ: Modern Online Judge
+  MeLy Oj
 </h1>
 <p align="center">
   <a href="https://github.com/DMOJ/online-judge/actions?query=workflow%3Abuild">
