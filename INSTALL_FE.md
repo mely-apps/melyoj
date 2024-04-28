@@ -1,7 +1,8 @@
 # Hướng dẫn build source MelyOJ (Frontend)
 
 # Video Hướng dẫn
-[![Watch the video](https://github.com/mely-apps/melyoj/assets/59696851/7f34ea4d-a4b9-4caa-a3e0-369c70e42265)](https://drive.google.com/file/d/1k2N0sdQNyJvuCdcT4p6871422Or2xt6o/view?usp=sharing)
+[![Watch the video](https://github.com/mely-apps/melyoj/assets/59696851/8304a7d2-c7ee-415c-8129-dd4381de1f37
+)](https://drive.google.com/file/d/1k2N0sdQNyJvuCdcT4p6871422Or2xt6o/view?usp=sharing)
 
 
 ## Môi trường build được sử dụng trong hướng dẫn: Ubuntu 23.04, ARM64. Khuyến khích sử dụng các distro dựa trên Debian (Ubuntu, Linux Mint, etc..)
