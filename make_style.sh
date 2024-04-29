@@ -18,10 +18,12 @@ cd "$(dirname "$0")" || exit
 
 build_style() {
   echo "Creating $1 style..."
-  cp resources/vars-$1.scss resources/vars.scss
-  sass resources:sass_processed
-  postcss sass_processed/style.css sass_processed/martor-description.css sass_processed/select2-dmoj.css --verbose -d $2
+  cp resources/vars-$1.scss css/vars.scss
+  sass resources:css
+  postcss css/style.css css/martor-description.css css/select2-dmoj.css --verbose -d $2
 }
 
-build_style 'default' 'resources'
-build_style 'dark' 'resources/dark'
+build_style 'default' 'css'
+build_style 'dark' 'css/dark'
+
+echo yes | python3 manage.py collectstatic

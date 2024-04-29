@@ -2,7 +2,6 @@
     var init = function ($element, options) {
         $element.select2(options);
     };
-
     var initHeavy = function ($element, options) {
         var settings = $.extend({
             ajax: {
