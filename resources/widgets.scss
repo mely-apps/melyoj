@@ -5,7 +5,8 @@
     font-size: 1.9em;
 }
 
-.facebook-this, .tweet-this {
+.facebook-this,
+.tweet-this {
     display: inline;
 }
 
@@ -23,7 +24,9 @@
 }
 
 // Bootstrap-y buttons
-.button, button, input[type=submit] {
+.button,
+button,
+input[type=submit] {
     color: white !important;
     text-decoration: none !important;
     cursor: pointer;
@@ -77,15 +80,21 @@
 }
 
 input {
-    &[type=text], &[type=password], &[type=email], &[type=number] {
+
+    &[type=text],
+    &[type=password],
+    &[type=email],
+    &[type=number] {
         padding: 4px 8px;
-        color: $color_primary75;
-        background: $color_primary0 none;
-        border: 1px solid $color_primary25;
-        border-radius: $widget_border_radius;
         box-shadow: 0 1px 1px rgba($color_primary100, 0.075) inset;
         transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
         box-sizing: border-box;
+        border: 1px solid $primary_color;
+        background-color: $bg_box;
+        color: white;
+        min-width: $input_w;
+        height: 35px;
+        border-radius: 15px;
 
         // Need this explicitly because UA stylesheet for Chrome on 4k makes
         // everything look bad otherwise (forces it to 9.3px)
@@ -191,12 +200,15 @@ textarea:focus {
             color: $color_primary50;
         }
 
-        a, span {
+        a,
+        span {
             border-top-width: 3px !important;
         }
 
         &.active {
-            a, span {
+
+            a,
+            span {
                 border-top-color: $mely_yellow !important;
             }
 
@@ -210,7 +222,7 @@ textarea:focus {
         color: $color_primary75;
     }
 
-    > ul {
+    >ul {
         margin: 0;
         margin-bottom: -1px;
         padding: 0;
@@ -219,11 +231,12 @@ textarea:focus {
         overflow-x: auto;
         overflow-y: hidden;
 
-        > li {
+        >li {
             position: relative;
             display: block;
 
-            &.active > a, &.active > span {
+            &.active>a,
+            &.active>span {
                 @extend .ul_tab_a_active;
 
                 &:hover {
@@ -235,7 +248,8 @@ textarea:focus {
                 }
             }
 
-            > a, > span {
+            >a,
+            >span {
                 margin-right: 2px;
                 line-height: 1.42857;
                 border: 1px solid transparent;
@@ -265,23 +279,29 @@ ul.pagination {
         li {
             display: inline;
 
-            &:first-child > {
-                a, span {
+            &:first-child> {
+
+                a,
+                span {
                     margin-left: 0;
                     border-top-left-radius: $widget_border_radius;
                     border-bottom-left-radius: $widget_border_radius;
                 }
             }
 
-            &:last-child > {
-                a, span {
+            &:last-child> {
+
+                a,
+                span {
                     border-top-right-radius: $widget_border_radius;
                     border-bottom-right-radius: $widget_border_radius;
                 }
             }
 
             > {
-                a, span {
+
+                a,
+                span {
                     position: relative;
                     float: left;
                     padding: 4px 12px;
@@ -295,14 +315,18 @@ ul.pagination {
             }
         }
 
-        .disabled-page > {
-            a, span {
+        .disabled-page> {
+
+            a,
+            span {
                 color: $color_primary50;
             }
         }
 
-        .active-page > {
-            a, span {
+        .active-page> {
+
+            a,
+            span {
                 z-index: 2;
                 color: #FFF;
                 background-color: $mely_yellow;
@@ -349,11 +373,13 @@ ul.pagination {
     border-color: #ebccd1;
 }
 
-.alert-dismissable, .alert-dismissible {
+.alert-dismissable,
+.alert-dismissible {
     padding-right: 35px;
 }
 
-.alert-dismissable .close, .alert-dismissible .close {
+.alert-dismissable .close,
+.alert-dismissible .close {
     position: relative;
     top: -2px;
     right: -21px;
@@ -381,7 +407,9 @@ a.close {
 }
 
 .close {
-    &:focus, &:hover {
+
+    &:focus,
+    &:hover {
         color: #000;
         text-decoration: none;
         cursor: pointer;

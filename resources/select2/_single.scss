@@ -1,11 +1,15 @@
 .select2-selection--single {
-    background-color: $color_primary0;
-    border: 1px solid $color_primary33;
-    border-radius: 4px;
+    border-radius: 15px;
+    height: $input_h !important;
+    border: 1px solid $primary_color;
+    background-color: $bg_box;
 
     .select2-selection__rendered {
-        color: $color_primary75;
+        color: white;
         line-height: 28px;
+        height: $input_h;
+        display: flex !important;
+        align-items: center !important;
     }
 
     .select2-selection__clear {
@@ -20,9 +24,7 @@
 
     .select2-selection__arrow {
         height: 26px;
-
         position: absolute;
-
         top: 1px;
         right: 1px;
 

@@ -101,6 +101,15 @@ th {
     background-color: $bg_box;
     border-radius: 15px;
     box-shadow: 1px 2px 1px 0px #eeeeee5e;
+
+
+    input {
+        border: 1px solid $primary_color;
+        background-color: $bg_box;
+        color: white;
+        height: $input_h;
+        border-radius: 15px;
+    }
 }
 
 div.info-float {
@@ -197,6 +206,7 @@ footer {
 html {
     position: relative;
     height: 100%;
+    // font-size: 62.5%;
 }
 
 a {
@@ -254,7 +264,8 @@ noscript #noscript {
     }
 }
 
-#form-errors, .form-errors {
+#form-errors,
+.form-errors {
     background: rgba(255, 0, 0, 0.3);
     border: 3px solid red;
     border-radius: $widget_border_radius;
@@ -341,16 +352,20 @@ math {
 }
 
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.d-flex-center{
+.d-flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.m-auto{
+.m-auto {
     margin: auto;
+}
+
+.select2-results {
+    background-color: $bg_select !important;
 }

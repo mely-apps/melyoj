@@ -49,14 +49,15 @@
         <hr>
         {% csrf_token %}
         {% if form.errors %}
-        <div id="form-errors">
-            <p class="error bg-red-300 border-spacing-3">{{ _('Invalid username or password.') }}</p>
+        <div>
+            <p class="error caret-red-500 p-2 bg-red-200 text-red-500 rounded-sm">{{ _('Invalid username or password.')
+                }}</p>
         </div>
         {% endif %}
 
         <div class="form-footer">
             <a href="{{ url('password_reset') }}">{{ _('Forgot your password?') }}</a>
-            <button style="float:right;" class="text-white" type="submit">{{ _('Login!') }}</button>
+            <button style="float:right;" class="text-white rounded-md" type="submit">{{ _('Login!') }}</button>
         </div>
         <input type="hidden" name="next" value="{{ next }}">
     </form>
