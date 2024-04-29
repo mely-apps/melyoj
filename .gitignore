@@ -12,6 +12,7 @@ resources/martor-description.css
 resources/select2-dmoj.css
 resources/style.css
 resources/vars.scss
+resources/*.map.css
 sass_processed
 jsi18n
 
@@ -25,3 +26,8 @@ package-lock.json
 theme
 
 uwsgi.ini
+
+<desired bridge log path>
+
+yarn.lock
+/css

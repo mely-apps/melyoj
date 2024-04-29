@@ -3609,7 +3609,11 @@ msgstr "Người dùng %s"
 
 #: judge/views/user.py:129
 msgid "Login"
-msgstr "Đăng nhập"
+msgstr "Đăng Nhập"
+
+#: judge/views/user.py:129
+msgid "Login_title"
+msgstr "Chào mừng bạn đến với MeLyOJ"
 
 #: judge/views/user.py:170
 msgid "M j, Y, G:i"
@@ -3717,14 +3721,14 @@ msgstr "Xin chào, %(username)s."
 msgid "Stop impersonating"
 msgstr "Ngừng mạo danh"
 
-#: templates/base.html:220
+#: templates/base.html:2205
 msgid "Log out"
 msgstr "Đăng xuất"
 
 #: templates/base.html:229
 #: templates/registration/password_reset_complete.html:4
 msgid "Log in"
-msgstr "Đăng nhập"
+msgstr "Đăng Nhập"
 
 #: templates/base.html:230 templates/registration/registration_form.html:181
 msgid "or"
