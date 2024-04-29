@@ -3728,7 +3728,7 @@ msgstr "Đăng xuất"
 #: templates/base.html:229
 #: templates/registration/password_reset_complete.html:4
 msgid "Log in"
-msgstr "Đăng Nhập"
+msgstr "Đăng nhập"
 
 #: templates/base.html:230 templates/registration/registration_form.html:181
 msgid "or"

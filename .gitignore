@@ -29,5 +29,6 @@ uwsgi.ini
 
 <desired bridge log path>
 
-yarn.lock
 /css
+
+yarn.lock
