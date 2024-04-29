@@ -32,3 +32,4 @@ uwsgi.ini
 /css
 
 yarn.lock
+./websocket/config.js

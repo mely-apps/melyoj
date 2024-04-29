@@ -1,0 +1,5 @@
+{
+    "watch": ["resources", "templates"],
+    "exec": "./make_style.sh",
+    "ext":"scss,.js, html"
+}
