@@ -1,5 +1,5 @@
 .select2-selection--single {
-    border-radius: 15px;
+    border-radius: $widget_border_radius;
     height: $input_h !important;
     border: 1px solid $primary_color;
     background-color: $bg_box;

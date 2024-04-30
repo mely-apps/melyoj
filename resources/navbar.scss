@@ -1,5 +1,6 @@
 // Navbar should look the same in every theme, so vars-common should be enough.
 @import "vars-common";
+@import "vars-default";
 
 #user-links {
     top: 0;
@@ -14,9 +15,14 @@
         align-items: center;
         white-space: nowrap;
         color: #5c5954;
+        gap: 20px;
 
         a {
             color: #FFF;
+        }
+
+        a:hover {
+            color: $primary_color;
         }
     }
 
@@ -24,36 +30,37 @@
         text-transform: none;
     }
 
-    & > ul {
+    &>ul {
         display: block;
         margin: 0;
 
-        & > li {
-            & > a {
+        &>li {
+            &>a {
                 display: block;
                 padding: 0;
                 height: 100%;
 
-                & > span {
+                &>span {
                     font-size: 13px;
                     padding: 10px 10px;
                     display: block;
                     white-space: nowrap;
 
-                    & > img {
+                    &>img {
                         vertical-align: middle;
-                        border-radius: $widget_border_radius;
+                        border-radius: 999px;
                         margin-right: 6px;
+                        border: 1px solid #999;
                     }
 
-                    & > span {
+                    &>span {
                         vertical-align: middle;
                         color: #eee;
                     }
                 }
             }
 
-            & > ul {
+            &>ul {
                 left: 0;
             }
         }
@@ -66,7 +73,7 @@
 }
 
 #nav-container {
-    background: #151515;
+    background: $color_primary75;
 
     // opacity: 0.77
     // filter: alpha(opacity=77)
@@ -102,7 +109,8 @@ nav {
                 }
             }
 
-            a, button {
+            a,
+            button {
                 display: inline-block;
                 text-decoration: none;
                 vertical-align: middle;
@@ -115,14 +123,15 @@ nav {
                 }
 
                 &:hover {
-                    color: #FFF;
-                    background: rgba(255, 255, 255, 0.25);
+                    color: $primary_color;
+                    background: $color_primary66;
                     margin: 0;
                 }
 
                 &.active {
-                    color: #FFF;
-                    background: $mely_yellow;
+                    color: $primary_color;
+                    background: $bg_primary_10;
+                    border-bottom: 1px solid $primary_color;
                 }
 
                 .nav-expand {
@@ -151,7 +160,8 @@ nav {
                 li {
                     display: block;
 
-                    a, button {
+                    a,
+                    button {
                         padding: 8px 20px 8px 8px !important;
                         font-size: 0.8em;
                         line-height: 18px;
@@ -171,7 +181,9 @@ nav {
                 height: auto;
             }
 
-            &:hover > ul, &:active > ul, &:focus > ul {
+            &:hover>ul,
+            &:active>ul,
+            &:focus>ul {
                 display: block !important;
             }
 
@@ -267,7 +279,7 @@ nav {
         }
     }
 
-    #user-links > ul > li > a > span {
+    #user-links>ul>li>a>span {
         padding: 6px 8px;
     }
 }
@@ -279,7 +291,7 @@ nav {
                 display: none;
             }
 
-            &:not(:hover) > ul {
+            &:not(:hover)>ul {
                 display: none !important;
             }
 
