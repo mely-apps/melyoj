@@ -271,7 +271,7 @@
 
         {% csrf_token %}
 
-        <div style="padding-top:0.5em" class="block-header grayed">{{ _('Self-description:') }}</div>
+        <div style="padding-top:0.5em" class="block-header">{{ _('Self-description:') }}</div>
         {{ form.about }}
         <hr>
 
@@ -279,24 +279,24 @@
             <div class="pane" style="vertical-align:top">
                 <table style="padding-right:0.8em">
                     <tr title="{{ _('Select your closest major city') }}">
-                        <td><label class="inline-header grayed">{{ _('Time zone:') }}</label></td>
+                        <td><label class="inline-header ">{{ _('Time zone:') }}</label></td>
                         <td><span class="fullwidth">{{ form.timezone }}</span></td>
                     </tr>
                     <tr>
-                        <td><label class="inline-header grayed">{{ _('Language:') }}</label></td>
+                        <td><label class="inline-header ">{{ _('Language:') }}</label></td>
                         <td><span class="fullwidth">{{ form.language }}</span></td>
                     </tr>
                     <tr{% if not perms.judge.test_site %} style="display: none" {% endif %}>
-                        <td><label class="inline-header grayed">{{ _('Site theme:') }}</label></td>
+                        <td><label class="inline-header ">{{ _('Site theme:') }}</label></td>
                         <td><span class="fullwidth">{{ form.site_theme }}</span></td>
                         </tr>
                         <tr>
-                            <td><label class="inline-header grayed">{{ _('Editor theme:') }}</label></td>
+                            <td><label class="inline-header ">{{ _('Editor theme:') }}</label></td>
                             <td><span class="fullwidth">{{ form.ace_theme }}</span></td>
                         </tr>
                         {% if has_math_config %}
                         <tr>
-                            <td><label class="inline-header grayed">{{ _('Math engine:') }}</label></td>
+                            <td><label class="inline-header ">{{ _('Math engine:') }}</label></td>
                             <td><span class="fullwidth">{{ form.math_engine }}</span></td>
                         </tr>
                         {% endif %}
@@ -304,7 +304,7 @@
             </div>
             {% if form.organizations %}
             <div class="pane">
-                <div style="padding-bottom:0.3em; margin-top:0.3em" class="block-header grayed">
+                <div style="padding-bottom:0.3em; margin-top:0.3em" class="block-header ">
                     {{- _('Affiliated organizations:') -}}
                 </div>
                 {{ form.organizations }}
@@ -319,7 +319,7 @@
                     <tr>
                         <td>
                             {{ form.newsletter }}
-                            <label for="id_newsletter" style="float: unset" class="inline-header grayed">
+                            <label for="id_newsletter" style="float: unset" class="inline-header ">
                                 {{- _('Notify me about upcoming contests') -}}
                             </label>
                         </td>
@@ -328,7 +328,7 @@
                     <tr>
                         <td>
                             {{ form.test_site }}
-                            <label for="id_test_site" style="float: unset" class="inline-header grayed">
+                            <label for="id_test_site" style="float: unset" class="inline-header ">
                                 {{- form.test_site.label -}}
                             </label>
                         </td>
@@ -365,7 +365,7 @@
                     {% endif %}
                     <tr>
                         <td>
-                            <span id="api-token-td" class="inline-header grayed">
+                            <span id="api-token-td" class="inline-header ">
                                 {{ _('API token:') }}
                                 {% if profile.api_token %}
                                 <a id="generate-api-token-button" href="{{ url('generate_api_token') }}"
@@ -386,7 +386,7 @@
             <div class="pane">
                 <div>
                     {% if profile.is_totp_enabled %}
-                    <div class="block-header grayed">{{ _('Two-factor authentication is enabled:') }}</div>
+                    <div class="block-header ">{{ _('Two-factor authentication is enabled:') }}</div>
                     <div class="block-buttons">
                         {% if require_staff_2fa and request.user.is_staff and not profile.is_webauthn_enabled %}
                         <a id="disable-2fa-button" class="button inline-button">{{ _('Disable') }}</a>
@@ -395,7 +395,7 @@
                         {% endif %}
                         <a href="{{ url('refresh_2fa') }}" class="button inline-button">{{ _('Refresh') }}</a>
                     </div>
-                    <div class="block-header grayed">
+                    <div class="block-header ">
                         {{ _('Scratch codes:') }}
                         {% if profile.scratch_codes %}
                         <a id="generate-scratch-codes-button" href="{{ url('generate_scratch_codes') }}"
@@ -419,15 +419,15 @@
                         </div>
                     </div>
                     {% else %}
-                    <span class="inline-header grayed">
+                    <span class="inline-header ">
                         {{ _('Two-factor Authentication is disabled:') }}
                         <a href="{{ url('enable_2fa') }}" class="button inline-button">{{ _('Enable') }}</a>
                     </span>
                     {% endif %}
                 </div>
-                <span class="grayed">
+                <span class="">
                     {% if HAS_WEBAUTHN %}
-                    <div style="padding-bottom:0.4em" class="block-header grayed">
+                    <div style="padding-bottom:0.4em" class="block-header ">
                         {{- _('Security keys:') -}}
                     </div>
                     <table class="table">
@@ -455,7 +455,7 @@
             </div>
         </div>
         <hr>
-        <div class="block-header grayed">{{ _('User-script:') }}</div>
+        <div class="block-header ">{{ _('User-script:') }}</div>
         {{ form.user_script }}
         <hr>
 

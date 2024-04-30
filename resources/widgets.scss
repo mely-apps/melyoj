@@ -94,7 +94,7 @@ input {
         color: white;
         min-width: $input_w;
         height: 35px;
-        border-radius: 15px;
+        border-radius: $widget_border_radius;
 
         // Need this explicitly because UA stylesheet for Chrome on 4k makes
         // everything look bad otherwise (forces it to 9.3px)
@@ -219,7 +219,7 @@ textarea:focus {
     }
 
     h2 {
-        color: $color_primary75;
+        color: white;
     }
 
     >ul {
