@@ -16,7 +16,8 @@ $ sudo apt update
 $ sudo apt install git gcc g++ make wget curl python3-dev python3-pip python3-venv libxml2-dev libxslt1-dev zlib1g-dev gettext curl redis-server build-essential mariadb-server libmysqlclient-dev
 $ curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 $ sudo apt install nodejs
-$ sudo npm install -g sass postcss-cli postcss autoprefixer tailwindcss
+$ sudo npm i -g yarn
+$ sudo yarn add -g sass postcss-cli postcss autoprefixer tailwindcss
 ```
 
 # Cấu hình database
@@ -37,7 +38,7 @@ Tạo môi trường ảo (có thể dùng Anaconda để thay thế)
 
 ```bash
 $ python3 -m venv melyojsite
-$ source ./melyojsite/bin/activate
+$ source ~/melyojsite/bin/activate
 ```
 
 Tải source code
@@ -47,6 +48,7 @@ $ git clone git@github.com:mely-apps/melyoj.git
 $ cd melyoj
 $ git submodule init
 $ git submodule update
+
 ```
 
 Cài đặt dependencies
@@ -54,7 +56,7 @@ Cài đặt dependencies
 ```bash
 $ pip3 install -r requirements.txt
 $ pip3 install lxml_html_clean
-$ npm install tailwindcss
+$ yarn
 ```
 
 Cấu hình MelyOJ
