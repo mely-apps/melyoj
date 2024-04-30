@@ -111,7 +111,7 @@ Quy trình dev:
 * Thực hiện các thay đổi CSS trong `resources/`, các thay đổi HTML trong `templates/`
 * Sau khi hoàn thành các thay đổi CSS, cần compile lại CSS theo hướng dẫn sau
   ```bash
-  $ ./make_style.sh && echo yes | python3 manage.py collectstatic
+  $ yarn dev:fe
   ```
 * Thực hiện F5 (hoặc Ctrl-F5) để thấy thay đổi mới của trang
 
