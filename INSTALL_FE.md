@@ -1,9 +1,8 @@
 # Hướng dẫn build source MelyOJ (Frontend)
 
 # Video Hướng dẫn
-[![Watch the video](https://github.com/mely-apps/melyoj/assets/59696851/8304a7d2-c7ee-415c-8129-dd4381de1f37
-)](https://drive.google.com/file/d/1k2N0sdQNyJvuCdcT4p6871422Or2xt6o/view?usp=sharing)
 
+[![Watch the video](https://github.com/mely-apps/melyoj/assets/59696851/8304a7d2-c7ee-415c-8129-dd4381de1f37)](https://drive.google.com/file/d/1k2N0sdQNyJvuCdcT4p6871422Or2xt6o/view?usp=sharing)
 
 ## Môi trường build được sử dụng trong hướng dẫn: Ubuntu 23.04, ARM64. Khuyến khích sử dụng các distro dựa trên Debian (Ubuntu, Linux Mint, etc..)
 
@@ -32,7 +31,7 @@ MariaDB [(none)]> exit
 $ mariadb-tzinfo-to-sql /usr/share/zoneinfo | sudo mariadb -u root mysql
 ```
 
-# Chuẩn bị source 
+# Chuẩn bị source
 
 Tạo môi trường ảo (có thể dùng Anaconda để thay thế)
 
@@ -91,7 +90,7 @@ $ python3 manage.py makemigrations
 $ python3 manage.py migrate
 ```
 
-Load một số dữ liệu sample: 
+Load một số dữ liệu sample:
 
 ```bash
 $ python3 manage.py loaddata navbar
@@ -107,12 +106,13 @@ $ python3 manage.py runserver 0.0.0.0:8000
 
 Truy cập web dev tại localhost:8000
 
-Quy trình dev: 
-* Thực hiện các thay đổi CSS trong `resources/`, các thay đổi HTML trong `templates/`
-* Sau khi hoàn thành các thay đổi CSS, cần compile lại CSS theo hướng dẫn sau
+Quy trình dev:
+
+- Thực hiện các thay đổi CSS trong `resources/`, các thay đổi HTML trong `templates/`
+- Sau khi hoàn thành các thay đổi CSS, cần compile lại CSS theo hướng dẫn sau
   ```bash
   $ yarn dev:fe
   ```
-* Thực hiện F5 (hoặc Ctrl-F5) để thấy thay đổi mới của trang
+- Thực hiện F5 (hoặc Ctrl-F5) để thấy thay đổi mới của trang
 
 # Good luck ;)
