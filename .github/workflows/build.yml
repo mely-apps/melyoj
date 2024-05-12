@@ -54,5 +54,5 @@ jobs:
         run: npm install tailwindcss
       - name: Build style.css
         run: |
-         pip install -r requirements.txt
+         sed -i '$ d' make_style.sh
          ./make_style.sh
