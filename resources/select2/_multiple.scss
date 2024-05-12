@@ -1,5 +1,6 @@
 .select2-selection--multiple {
-    background-color: $color_primary0;
+    // TODO: Readd background color if needed
+    //background-color: $color_primary0;
     border: 1px solid $color_primary33;
     border-radius: 4px;
     cursor: text;
@@ -9,7 +10,7 @@
         list-style: none;
         margin: 0;
         padding: 0 5px;
-        width: 100%;
+        width: 100% !important;
 
         li {
             list-style: none;
