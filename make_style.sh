@@ -23,7 +23,7 @@ build_style() {
   postcss css/style.css css/martor-description.css css/select2-dmoj.css --verbose -d $2
 }
 
-# build_style 'default' 'css'
+build_style 'default' 'css'
 build_style 'dark' 'css/dark'
 
 echo yes | python3 manage.py collectstatic
