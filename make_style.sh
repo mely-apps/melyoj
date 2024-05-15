@@ -18,9 +18,9 @@ cd "$(dirname "$0")" || exit
 
 build_style() {
   echo "Creating $1 style..."
-  cp resources/vars-$1.scss css/vars.scss
+  cp resources/vars-"$1".scss css/vars.scss
   sass resources:css
-  postcss css/style.css css/martor-description.css css/select2-dmoj.css --verbose -d $2
+  postcss css/style.css css/martor-description.css css/select2-dmoj.css --verbose -d "$2"
 }
 
 #build_style 'default' 'css'
