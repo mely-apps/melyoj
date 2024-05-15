@@ -5,7 +5,7 @@
 )](https://drive.google.com/file/d/1k2N0sdQNyJvuCdcT4p6871422Or2xt6o/view?usp=sharing)
 
 
-## Môi trường build được sử dụng trong hướng dẫn: Ubuntu 23.04, ARM64. Khuyến khích sử dụng các distro dựa trên Debian (Ubuntu, Linux Mint, etc..)
+## Môi trường build được khuyến khích sử dụng: Ubuntu 22.04, x86_64. Nên sử dụng các distro dựa trên Debian (Ubuntu, Linux Mint, etc..)
 
 # Cài đặt package cần thiết
 
