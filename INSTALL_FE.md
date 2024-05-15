@@ -6,6 +6,20 @@
 
 ## Môi trường build được sử dụng trong hướng dẫn: Ubuntu 23.04, ARM64. Khuyến khích sử dụng các distro dựa trên Debian (Ubuntu, Linux Mint, etc..)
 
+<details><summary>Đối với hệ điều hành Windows</summary>
+<h2>Trên Windows sẽ không có trước môi trường Linux. Bạn có thể thực hiện theo cách sau đây để chuẩn bị hệ thống trên Windows</h2>
+
+Mở powershell rồi thực hiện các lệnh sau:
+
+```powershell
+PS C:\Demo> wsl --install -d Ubuntu
+PS C:\Demo> shutdown -r -t 0
+```
+
+Mở ứng dụng `Windows Subsystem for Linux` vừa được cài đặt và làm theo hướng dẫn bên dưới.
+
+</details>
+
 # Cài đặt package cần thiết
 
 Mở terminal và thực hiện các câu lệnh sau
