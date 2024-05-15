@@ -53,4 +53,6 @@ jobs:
       - name: Install TailwindCSS
         run: npm install tailwindcss
       - name: Build style.css
-        run: ./make_style.sh
+        run: |
+         sed -i '$ d' make_style.sh
+         ./make_style.sh
