@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://i.ibb.co/ncssRM5/437465171-412800521470932-8888283350696784784-n.jpg" width="120px">
+  <img src="https://i.ibb.co/ncssRM5/437465171-412800521470932-8888283350696784784-n.jpg" width="120px" border-radius: 50%>
   <br>
   MeLy OJ
 </h1>
@@ -7,6 +7,10 @@
 A modern Online Judge system, forked from [DMOJ](https://github.com/DMOJ/online-judge)
 
 See our page at [Coming soon](https://codemely.dev)!
+
+Screenshots:
+
+<img src="https://i.imgur.com/iYidu9V.png">
 
 ## Installation
 
