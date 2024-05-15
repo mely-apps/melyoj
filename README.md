@@ -1,37 +1,20 @@
 <h1 align="center">
   <img src="https://i.ibb.co/ncssRM5/437465171-412800521470932-8888283350696784784-n.jpg" width="120px">
   <br>
-  MeLy Oj
+  MeLy OJ
 </h1>
-<p align="center">
-  <a href="https://github.com/DMOJ/online-judge/actions?query=workflow%3Abuild">
-    <img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/DMOJ/online-judge/build.yml?branch=master"/>
-  </a>
-  <a href="LICENSE.md">
-    <img alt="License" src="https://img.shields.io/github/license/DMOJ/online-judge"/>
-  </a>
-  <a href="https://dmoj.ca/about/discord/">
-    <img src="https://img.shields.io/discord/677340492651954177?color=%237289DA&label=Discord"/>
-  </a>
-</p>
 
-A modern open-source online judge and contest platform system. It has been used to host thousands of competitions, including several national olympiads.
+A modern Online Judge system, forked from [DMOJ](https://github.com/DMOJ/online-judge)
 
-See it live at [dmoj.ca](https://dmoj.ca/)!
+See our page at [Coming soon](https://codemely.dev)!
 
-## Tailwind note
-Rebuild the css after making change to the `templates` folder with these command:
-```
-./make_style.sh
-python3 manage.py collectstatic
-```
-If you can't see the change, you may have to wipe your cache (Ctrl-F5 (or Cmd-Shift-R on Mac)).
+## Installation
 
-The build might take longer than usual, due to Tailwind ;)
+For MeLyOJ installation, look at [INSTALL_FE.md](https://github.com/mely-apps/melyoj/blob/develop/INSTALL_FE.md) 
 
 ## Features
 
-* [Support for over **60 language runtimes**](https://github.com/DMOJ/online-judge#supported-languages)
+* [Support for over **60 language runtimes**](https://github.com/mely-apps/melyoj#supported-languages)
 * Highly robust judging system:
    * Supports **interactive** and **signature-graded** tasks
    * Supports **runtime data generators** and **custom output validators**
@@ -53,57 +36,6 @@ The build might take longer than usual, due to Tailwind ;)
 * Fine-grained permission control for staff
 * OAuth login with Google, Facebook, and Github
 * Two-factor authentication support
-
-## Installation
-
-Check out the install documentation at [docs.dmoj.ca](https://docs.dmoj.ca/#/site/installation). Feel free to reach out to us on [Discord](https://dmoj.ca/about/discord/) if you have any questions.
-
-## Screenshots
-
-### Sleek problem statements
-Problems are written in Markdown, with LaTeX-enabled math and figures, as well as syntax highlighting. Problem statements can be saved to PDF for ease of distribution to contestants.
-
-![](https://i.imgur.com/7KD7h5r.png)
-
-### Submit in over 60 languages
-Contestants may submit in over 60 programming languages with syntax highlighting. Problem authors can restrict problems to specific languages, and set language-specific resource limits.
-
-![](https://i.imgur.com/8CjfHQb.png)
-
-### Live submission status
-Submission pages feature live updates, and submissions may be aborted by both submission authors and administrators. Compilation errors and warnings for a number of languages feature color highlighting.
-
-![](https://i.imgur.com/Hom0U3R.png)
-
-Global, per-problem, and per-contest submission lists are live-updating, and can be filtered by status and language.
-
-![](https://i.imgur.com/rc7orzj.png)
-
-### Extensible contest system
-Contests feature an optional rating system, and can be configured to run in any timeframe. Users are also able to participate virtually after the contest ends. ICPC, IOI, AtCoder, and ECOO contest formats are supported out-of-the-box, and new formats can be added with custom code.
-
-![](https://i.imgur.com/0V1fzZi.png)
-
-Contests may be limited to particular organizations, or require access codes to join. Hidden scoreboards are supported. The contest system integrates with [Stanford MOSS](https://theory.stanford.edu/~aiken/moss/) to provide plagiarism checking.
-Editorial support is built-in, and editorials are automatically published once a contest ends.
-
-### Home page blog and activity stream
-
-Announcements from administrators, ongoing contests, recent comments and new problems are easily accessible from the home page.
-
-![](https://i.imgur.com/zpQAoDB.png)
-
-### Internationalized interface
-Use the site in whatever language you're most comfortable in &mdash; visit [translate.dmoj.ca](https://translate.dmoj.ca/) to check the translation status of your preferred language. Problem authors can provide statements in multiple languages, and DMOJ will display the most relevant one to a reader.
-
-![](https://i.imgur.com/OeuI0o5.png)
-
-### Highly featured administration interface
-The DMOJ admin interface is highly versatile, and can be efficiently used for anything from managing users to authoring problem statements.
-
-![](https://dmoj.ml/data/_other/readme/problem-admin.png)
-
-![](https://dmoj.ml/data/_other/readme/admin-dashboard.png)
 
 ## Supported languages
 
