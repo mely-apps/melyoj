@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://i.ibb.co/ncssRM5/437465171-412800521470932-8888283350696784784-n.jpg" width="120px" style="border-radius:50%">
+  <img src="https://i.ibb.co/ncssRM5/437465171-412800521470932-8888283350696784784-n.jpg" width="120px" style="border-radius: 50%">
   <br>
   MeLy OJ
 </h1>
