@@ -28,7 +28,7 @@ cache_timeout = 0
 def user_tester_ids(profile):
     """
 
-    :param profile: 
+    :param profile:
 
     """
     return set(
@@ -41,7 +41,7 @@ def user_tester_ids(profile):
 def user_editable_ids(profile):
     """
 
-    :param profile: 
+    :param profile:
 
     """
     return set(Problem.get_editable_problems(profile.user).values_list("id", flat=True))
@@ -50,7 +50,7 @@ def user_editable_ids(profile):
 def contest_completed_ids(participation):
     """
 
-    :param participation: 
+    :param participation:
 
     """
     key = "contest_complete:%d" % participation.id
@@ -70,7 +70,7 @@ def contest_completed_ids(participation):
 def user_completed_ids(profile):
     """
 
-    :param profile: 
+    :param profile:
 
     """
     key = "user_complete:%d" % profile.id
@@ -90,7 +90,7 @@ def user_completed_ids(profile):
 def contest_attempted_ids(participation):
     """
 
-    :param participation: 
+    :param participation:
 
     """
     key = "contest_attempted:%s" % participation.id
@@ -108,7 +108,7 @@ def contest_attempted_ids(participation):
 def user_attempted_ids(profile):
     """
 
-    :param profile: 
+    :param profile:
 
     """
     key = "user_attempted:%s" % profile.id
@@ -124,7 +124,7 @@ def user_attempted_ids(profile):
 def _get_result_data(results):
     """
 
-    :param results: 
+    :param results:
 
     """
     return {
@@ -157,8 +157,8 @@ def _get_result_data(results):
 def get_result_data(*args, **kwargs):
     """
 
-    :param *args: 
-    :param **kwargs: 
+    :param *args:
+    :param **kwargs:
 
     """
     if args:
@@ -182,8 +182,8 @@ def get_result_data(*args, **kwargs):
 def hot_problems(duration, limit):
     """
 
-    :param duration: 
-    :param limit: 
+    :param duration:
+    :param limit:
 
     """
     cache_key = "hot_problems:%d:%d" % (duration.total_seconds(), limit)
