@@ -21,6 +21,11 @@ cache_timeout = 0
 
 
 def user_tester_ids(profile):
+    """
+
+    :param profile: 
+
+    """
     return set(
         Problem.testers.through.objects.filter(profile=profile).values_list(
             "problem_id", flat=True
@@ -29,10 +34,20 @@ def user_tester_ids(profile):
 
 
 def user_editable_ids(profile):
+    """
+
+    :param profile: 
+
+    """
     return set(Problem.get_editable_problems(profile.user).values_list("id", flat=True))
 
 
 def contest_completed_ids(participation):
+    """
+
+    :param participation: 
+
+    """
     key = "contest_complete:%d" % participation.id
     result = cache.get(key)
     if result is None:
@@ -48,6 +63,11 @@ def contest_completed_ids(participation):
 
 
 def user_completed_ids(profile):
+    """
+
+    :param profile: 
+
+    """
     key = "user_complete:%d" % profile.id
     result = cache.get(key)
     if result is None:
@@ -63,6 +83,11 @@ def user_completed_ids(profile):
 
 
 def contest_attempted_ids(participation):
+    """
+
+    :param participation: 
+
+    """
     key = "contest_attempted:%s" % participation.id
     result = cache.get(key)
     if result is None:
@@ -76,6 +101,11 @@ def contest_attempted_ids(participation):
 
 
 def user_attempted_ids(profile):
+    """
+
+    :param profile: 
+
+    """
     key = "user_attempted:%s" % profile.id
     result = cache.get(key)
     if result is None:
@@ -87,6 +117,11 @@ def user_attempted_ids(profile):
 
 
 def _get_result_data(results):
+    """
+
+    :param results: 
+
+    """
     return {
         "categories": [
             # Using gettext_noop here since this will be tacked into the cache, so it must be language neutral.
@@ -115,6 +150,12 @@ def _get_result_data(results):
 
 
 def get_result_data(*args, **kwargs):
+    """
+
+    :param *args: 
+    :param **kwargs: 
+
+    """
     if args:
         submissions = args[0]
         if kwargs:
@@ -134,6 +175,12 @@ def get_result_data(*args, **kwargs):
 
 
 def hot_problems(duration, limit):
+    """
+
+    :param duration: 
+    :param limit: 
+
+    """
     cache_key = "hot_problems:%d:%d" % (duration.total_seconds(), limit)
     qs = cache.get(cache_key)
     if qs is None:
