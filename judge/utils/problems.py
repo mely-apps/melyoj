@@ -11,7 +11,7 @@ from judge.models import Problem, Submission
 
 __all__ = ['contest_completed_ids', 'get_result_data', 'user_completed_ids', 'user_editable_ids', 'user_tester_ids']
 
-timeout = 0
+cache_timeout = 0
 
 def user_tester_ids(profile):
     return set(Problem.testers.through.objects.filter(profile=profile).values_list('problem_id', flat=True))
@@ -27,7 +27,7 @@ def contest_completed_ids(participation):
     if result is None:
         result = set(participation.submissions.filter(submission__result='AC', points__gte=F('problem__points'))
                      .values_list('problem__problem_id', flat=True).distinct())
-        cache.set(key, result, timeout)
+        cache.set(key, result, cache_timeout)
     return result
 
 
@@ -37,7 +37,7 @@ def user_completed_ids(profile):
     if result is None:
         result = set(Submission.objects.filter(user=profile, result='AC', case_points__gte=F('case_total'))
                      .values_list('problem_id', flat=True).distinct())
-        cache.set(key, result, timeout)
+        cache.set(key, result, cache_timeout)
     return result
 
 
@@ -46,7 +46,7 @@ def contest_attempted_ids(participation):
     result = cache.get(key)
     if result is None:
         result = set(participation.submissions.values_list('problem__problem_id', flat=True).distinct())
-        cache.set(key, result, timeout)
+        cache.set(key, result, cache_timeout)
     return result
 
 
@@ -55,7 +55,7 @@ def user_attempted_ids(profile):
     result = cache.get(key)
     if result is None:
         result = set(profile.submission_set.values_list('problem_id', flat=True).distinct())
-        cache.set(key, result, timeout)
+        cache.set(key, result, cache_timeout)
     return result
 
 
