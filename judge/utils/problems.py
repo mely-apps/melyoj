@@ -13,6 +13,7 @@ __all__ = ['contest_completed_ids', 'get_result_data', 'user_completed_ids', 'us
 
 cache_timeout = 0
 
+
 def user_tester_ids(profile):
     return set(Problem.testers.through.objects.filter(profile=profile).values_list('problem_id', flat=True))
 
